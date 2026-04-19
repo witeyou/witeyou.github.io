@@ -1,9 +1,12 @@
 ---
-title: "PySide6 实时波形图性能优化记录"
-date: 2026-04-19
+title: "Pyside6 Waveform"
+date: 2026-04-19T17:45:00+08:00
 draft: false
-tags: ["PySide6", "性能优化"]
-categories: ["Qt"]
+tags: []
+categories: []
+summary: ""
+slug: ""
+showToc: true
 ---
 
 ## 背景

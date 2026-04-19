@@ -2,3 +2,54 @@ baseURL = 'https://witeyou.github.io/'
 languageCode = 'zh-cn'
 title = 'witeyou | 电气软件工程师'
 theme = "ananke"
+
+enableRobotsTXT = true
+summaryLength = 120
+
+[pagination]
+  pagerSize = 10
+
+[permalinks]
+  posts = "/posts/:slug/"
+  projects = "/projects/:slug/"
+
+[params]
+  author = "witeyou"
+  description = "记录技能学习过程，展示项目成果与工程实践。"
+
+[[menu.main]]
+  name = "首页"
+  pageRef = "/"
+  weight = 10
+
+[[menu.main]]
+  name = "关于我"
+  pageRef = "/about"
+  weight = 20
+
+[[menu.main]]
+  name = "学习记录"
+  pageRef = "/posts"
+  weight = 30
+
+[[menu.main]]
+  name = "项目展示"
+  pageRef = "/projects"
+  weight = 40
+
+[[menu.main]]
+  name = "履历成果"
+  pageRef = "/resume"
+  weight = 50
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[markup]
+  [markup.highlight]
+    style = "github"
+    lineNos = true
+    codeFences = true
+  [markup.goldmark.renderer]
+    unsafe = true
