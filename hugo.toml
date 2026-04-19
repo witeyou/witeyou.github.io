@@ -1,3 +1,4 @@
 baseURL = 'https://witeyou.github.io/'
 languageCode = 'zh-cn'
 title = 'witeyou | 电气软件工程师'
+theme = "ananke"
