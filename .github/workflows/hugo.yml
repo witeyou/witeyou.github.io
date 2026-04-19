@@ -39,19 +39,6 @@ jobs:
       - name: Build with Hugo
         run: hugo --minify
 
-      - name: Inspect generated files
-        run: |
-          echo "===== pwd ====="
-          pwd
-          echo "===== repo files ====="
-          find . -maxdepth 2 | sort
-          echo "===== public files ====="
-          find public -maxdepth 3 | sort
-          echo "===== check public/index.html ====="
-          ls -la public/index.html
-          echo "===== first 40 lines of public/index.html ====="
-          sed -n '1,40p' public/index.html
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
